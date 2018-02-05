@@ -8,6 +8,9 @@ body {
 .to-normalize {
   width: 100%; }
 
+.center {
+  text-align: center; }
+
 header {
   background-image: url("../img/header/background.jpg");
   background-repeat: no-repeat;
@@ -1097,14 +1100,17 @@ html {
 
 #section4 {
   position: relative;
-  z-index: 2;
   background-color: white; }
+
+#section4 .instagram-div {
+  position: absolute;
+  z-index: 3; }
 
 #section4 .col-md-6 {
   padding: 0; }
 
-#section4 img {
-  width: 100%; }
+#section4 .center {
+  margin-left: 4%; }
 
 #section4 .facebook {
   width: auto !important;
@@ -1125,9 +1131,10 @@ html {
 
 footer {
   position: absolute;
-    position-left: 0px;
-    position-top: 0px;
-    position-z-index: -1;
+  z-index: 1;
+    z-index-left: 0px;
+    z-index-top: 0px;
+    z-index-z-index: -1;
   width: 100%;
   height: auto;
   background-color: black;
@@ -1140,7 +1147,7 @@ footer .container {
 footer .container a {
   text-decoration: none;
   font-size: 1.3em;
-  color: #f4f4f4; }
+  color: #f4f4f3; }
 
 footer .container ul {
   margin-top: 2.25em;
