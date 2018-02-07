@@ -735,7 +735,7 @@ a.control_next {
   font-size: 18px; }
 
 .about-us-img {
-  margin: 6.25em 6.25em 0 6.25em;
+  margin: 6.25em 6.25em 0 10%;
   width: 80%;
   text-align: center; }
 
@@ -1107,16 +1107,11 @@ html {
   position: relative;
   background-color: white; }
 
-#section4 .instagram-div {
-  position: absolute;
-  z-index: 3;
-  margin-bottom: -200px; }
-
 #section4 .col-md-6 {
   padding: 0; }
 
-#section4 .center {
-  margin-left: 4%; }
+#section4 .our-team {
+  margin-left: 1.5em; }
 
 #section4 .facebook {
   width: auto !important;
@@ -1167,4 +1162,23 @@ footer .container ul li {
 @media screen and (max-width: 1200px) {
   .video-cont {
     margin-right: 5em;
-    text-align: center; } }
+    text-align: center; }
+  .our-team {
+    width: 60%;
+    margin-left: 13em !important; }
+  .inst-images img {
+    width: 100%;
+    margin-left: 5.70em; }
+  .white-row .white-rows {
+    margin-left: 5.5em; } }
+
+@media screen and (max-width: 991px) {
+  .our-team {
+    width: 65%;
+    margin-left: 8.75em !important; }
+  .inst-images img {
+    margin-left: 4.25em; }
+  .white-rows {
+    margin-left: 4.75em; }
+  .white-rows p {
+    float: left; } }
