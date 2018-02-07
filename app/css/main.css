@@ -79,7 +79,6 @@ header .container h5 {
 
 #slider ul li {
   position: relative;
-  display: block;
   float: left;
   margin: 0;
   padding: 0;
@@ -734,6 +733,11 @@ a.control_next {
   margin: 10px auto;
   width: 160px;
   font-size: 18px; }
+
+.about-us-img {
+  margin: 6.25em 6.25em 0 6.25em;
+  width: 80%;
+  text-align: center; }
 
 #section1 {
   width: auto;
