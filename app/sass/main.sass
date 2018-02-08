@@ -7,6 +7,13 @@ body
 	width: 100%
 .center
 	text-align: center
+.parallax-window
+	//min-height: 1000px
+	min-height: 100%
+	background: transparent
+	background-repeat: no-repeat
+.mydiv
+	//display: flex
 
 header
 	background-image: url("../img/header/background.jpg")
@@ -15,6 +22,8 @@ header
 	padding-top: 1%
 	position: relative
 
+header nav
+	margin-top: 1%
 
 header nav ul
 	float: right
@@ -730,9 +739,10 @@ a.control_next
 #section1
 	width: auto
 	height: auto
-	background-image: url("../img/section1/background.jpg")
-	background-repeat: no-repeat
+
+#section1 .parallax-window
 	padding-top: 15%
+	padding-bottom: 10%
 
 .white-div
 	padding: 5.625em 6.5em 2% 6.5em
@@ -787,7 +797,7 @@ a.control_next
 	margin-left: 5em
 	width: 32.25em
 	height: 18.75em
-	box-shadow: 20px 20px 70px 5px #d0d0d0
+	box-shadow: 5px 0px 70px 0px #d0d0d0
 
 div.mfp-content
 	text-align: center
@@ -1048,6 +1058,7 @@ html
 	transition: all 0.4s ease-in-out
 
 //SECTION4
+
 #section4
 	position: relative
 	background-color: white
@@ -1058,11 +1069,20 @@ html
 #section4 .our-team
 	margin-left: 1.5em
 
-
-
 #section4 .facebook
 	width: auto!important
 	margin: 20em 0em 0em 5em
+
+#section4 .facebook img
+	position: absolute
+	z-index: 1
+	margin-bottom: 10em
+
+#section4 .facebook div
+	margin-bottom: 10em
+	z-index: 2
+	margin-top: 13em
+	margin-left: 3.25em
 
 #section4 .white-row
 	background-color: white
