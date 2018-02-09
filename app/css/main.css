@@ -834,7 +834,8 @@ div.mfp-content .mfp-close {
 #section2 {
   width: auto;
   height: auto;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin-bottom: 5em; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -935,7 +936,7 @@ html {
   width: auto;
   height: auto;
   background-color: #ffffff;
-  padding-top: 6em; }
+  padding-top: 5em; }
 
 #section3 h1 {
   text-align: center; }
@@ -983,8 +984,6 @@ html {
   background-color: white;
   -webkit-border-radius: 0.25rem;
           border-radius: 0.25rem;
-  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -998,6 +997,10 @@ html {
   .card:hover .card__image {
     -webkit-filter: contrast(100%);
             filter: contrast(100%); }
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); }
 
 .card__content {
   display: -webkit-box;
@@ -1069,23 +1072,26 @@ html {
           flex-wrap: wrap; }
 
 .button {
-  text-align: center;
-  border: 1px solid #1cbe83;
+  font: normal normal 300 2.5em 'Open Sans';
+  text-decoration: none;
+  color: white;
+  background-color: #00b0ff;
+  border: 1px solid #00b0ff;
   padding: .3em 1.5em;
-  margin: 5px;
+  margin-left: 36.5%;
   -webkit-background-size: 200% 100%;
           background-size: 200% 100%;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, #1cbe83));
-  background-image: -webkit-linear-gradient(left, transparent 50%, #1cbe83 50%);
-  background-image: -o-linear-gradient(left, transparent 50%, #1cbe83 50%);
-  background-image: linear-gradient(to right, transparent 50%, #1cbe83 50%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, white));
+  background-image: -webkit-linear-gradient(left, transparent 50%, white 50%);
+  background-image: -o-linear-gradient(left, transparent 50%, white 50%);
+  background-image: linear-gradient(to right, transparent 50%, white 50%);
   -webkit-transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
   -o-transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
   transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease; }
 
 .button:hover {
-  color: white;
-  background-color: #1cbe83;
+  color: #00b0ff;
+  background-color: white;
   background-position: -100% 100%; }
 
 .toSmall {
@@ -1132,10 +1138,19 @@ html {
   position: relative;
   background-color: white; }
 
-#section4 .col-md-6 {
-  padding: 0; }
+.instagram-div {
+  position: absolute;
+  z-index: 3; }
 
-#section4 .our-team {
+.instagram-div .inst-images {
+  position: relative;
+  z-index: 4; }
+
+#section4 .instagram-div .col-md-6 {
+  padding: 0;
+  position: repative; }
+
+#section4 .instagram-div .our-team {
   margin-left: 1.5em; }
 
 #section4 .facebook {
@@ -1155,7 +1170,8 @@ html {
 
 #section4 .white-row {
   background-color: white;
-  height: auto; }
+  height: auto;
+  width: 100%; }
 
 #section4 .white-row img {
   width: auto !important;
@@ -1212,6 +1228,10 @@ footer .container ul li {
   .our-team {
     width: 60%;
     margin-left: 13em !important; }
+  #section3 .button {
+    width: 30%;
+    margin-left: 35.5%;
+    font-size: 1.8em; }
   .inst-images img {
     width: 100%;
     margin-left: 5.70em; }
@@ -1219,6 +1239,8 @@ footer .container ul li {
     margin-left: 5.5em; } }
 
 @media screen and (max-width: 991px) {
+  #section3 .button {
+    font-size: 1.6em; }
   .our-team {
     width: 65%;
     margin-left: 8.75em !important; }
