@@ -164,17 +164,15 @@
 	</section>
 	
 	<section id="section2" class="mydiv">
-	
-		<div class="container">
-   
-			<img class="to-normalize img-responsive our-team wow fadeIn" src="img/section1/out-team.png">
-    <div class="row">
-      <div class="col-md-12 heroSlider-fixed">
-        <div class="overlay">
-      </div>
+  		<div class="container">
+   			<img class="to-normalize img-responsive our-team wow fadeIn" src="img/section1/out-team.png">
+    		<div class="row">
+				 <div class="col-md-12 heroSlider-fixed">
+				 	<div class="overlay">
+				 </div>
          <!-- Slider -->
         <div class="slider responsive">
-        	<div class="to-down wow fadeIn">
+        	<div id="to-down" class="to-down wow fadeIn">
 				<div id="main-div" class="white-div-slider">
 					<img class="main-photo wow fadeIn" src="img/section2/photo-1.png">
 					<h2 id="to-white-1">Taj Burrow</h2>
@@ -261,7 +259,6 @@
 			<div class="next wow fadeIn">
 				<img src="img/section2/right-icon.png">
 			</div>
-				
       </div>
     </div>
   </div>
@@ -493,6 +490,7 @@
 		var mainDiv6 = document.getElementById("main-div6");
 		var mainDiv7 = document.getElementById("main-div7");
 		var mainDiv8 = document.getElementById("main-div8");
+		
 		var toWhite1 = document.getElementById("to-white-1");
 		var toWhite11 = document.getElementById("to-white-11");
 		var toWhite111 = document.getElementById("to-white-111");
@@ -575,6 +573,8 @@
 		mainDiv.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv.style.backgroundColor = "#00b0ff";
+			mainDiv.style.transition = "1s";
+			mainDiv.style.marginTop = "50px";
 			toWhite1.style.color = "white";
 			toWhite2.style.color = "white";
 			toWhite3.style.color = "white";
@@ -582,6 +582,7 @@
 		mainDiv.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv.style.backgroundColor = "white";
+			mainDiv.style.marginTop = "0px";
 			toWhite1.style.color = "#58c1ff";
 			toWhite2.style.color = "#a7a7a7";
 			toWhite3.style.color = "#a7a7a7";
@@ -591,6 +592,8 @@
 		mainDiv2.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv2.style.backgroundColor = "#00b0ff";
+			mainDiv2.style.transition = "1s";
+			mainDiv2.style.marginTop = "50px";
 			toWhite11.style.color = "white";
 			toWhite22.style.color = "white";
 			toWhite33.style.color = "white";
@@ -598,6 +601,7 @@
 		mainDiv2.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv2.style.backgroundColor = "white";
+			mainDiv2.style.marginTop = "0px";
 			toWhite11.style.color = "#58c1ff";
 			toWhite22.style.color = "#a7a7a7";
 			toWhite33.style.color = "#a7a7a7";
@@ -607,6 +611,8 @@
 		mainDiv3.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv3.style.backgroundColor = "#00b0ff";
+			mainDiv3.style.transition = "1s";
+			mainDiv3.style.marginTop = "50px";
 			toWhite111.style.color = "white";
 			toWhite222.style.color = "white";
 			toWhite333.style.color = "white";
@@ -614,6 +620,7 @@
 		mainDiv3.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv3.style.backgroundColor = "white";
+			mainDiv3.style.marginTop = "0px";
 			toWhite111.style.color = "#58c1ff";
 			toWhite222.style.color = "#a7a7a7";
 			toWhite333.style.color = "#a7a7a7";
@@ -623,6 +630,8 @@
 		mainDiv4.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv4.style.backgroundColor = "#00b0ff";
+			mainDiv4.style.transition = "1s";
+			mainDiv4.style.marginTop = "50px";
 			toWhite1111.style.color = "white";
 			toWhite2222.style.color = "white";
 			toWhite3333.style.color = "white";
@@ -630,6 +639,7 @@
 		mainDiv4.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv4.style.backgroundColor = "white";
+			mainDiv4.style.marginTop = "0px";
 			toWhite1111.style.color = "#58c1ff";
 			toWhite2222.style.color = "#a7a7a7";
 			toWhite3333.style.color = "#a7a7a7";
@@ -639,6 +649,8 @@
 		mainDiv5.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv5.style.backgroundColor = "#00b0ff";
+			mainDiv5.style.transition = "1s";
+			mainDiv5.style.marginTop = "50px";
 			toWhite11111.style.color = "white";
 			toWhite22222.style.color = "white";
 			toWhite33333.style.color = "white";
@@ -646,6 +658,7 @@
 		mainDiv5.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv5.style.backgroundColor = "white";
+			mainDiv5.style.marginTop = "0px";
 			toWhite11111.style.color = "#58c1ff";
 			toWhite22222.style.color = "#a7a7a7";
 			toWhite33333.style.color = "#a7a7a7";
@@ -655,6 +668,8 @@
 		mainDiv6.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv6.style.backgroundColor = "#00b0ff";
+			mainDiv6.style.transition = "1s";
+			mainDiv6.style.marginTop = "50px";
 			toWhite111111.style.color = "white";
 			toWhite222222.style.color = "white";
 			toWhite333333.style.color = "white";
@@ -662,6 +677,7 @@
 		mainDiv6.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv6.style.backgroundColor = "white";
+			mainDiv6.style.marginTop = "0px";
 			toWhite111111.style.color = "#58c1ff";
 			toWhite222222.style.color = "#a7a7a7";
 			toWhite333333.style.color = "#a7a7a7";
@@ -671,6 +687,8 @@
 		mainDiv7.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv7.style.backgroundColor = "#00b0ff";
+			mainDiv7.style.transition = "1s";
+			mainDiv7.style.marginTop = "50px";
 			toWhite1111111.style.color = "white";
 			toWhite2222222.style.color = "white";
 			toWhite3333333.style.color = "white";
@@ -678,6 +696,7 @@
 		mainDiv7.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv7.style.backgroundColor = "white";
+			mainDiv7.style.marginTop = "0px";
 			toWhite1111111.style.color = "#58c1ff";
 			toWhite2222222.style.color = "#a7a7a7";
 			toWhite3333333.style.color = "#a7a7a7";
@@ -687,6 +706,8 @@
 		mainDiv8.onmouseover = function()   {
 		    this.mouseIsOver = true;
 			mainDiv8.style.backgroundColor = "#00b0ff";
+			mainDiv8.style.transition = "1s";
+			mainDiv8.style.marginTop = "50px";
 			toWhite11111111.style.color = "white";
 			toWhite22222222.style.color = "white";
 			toWhite33333333.style.color = "white";
@@ -694,6 +715,7 @@
 		mainDiv8.onmouseout = function()   {
 		    this.mouseIsOver = false;
 			mainDiv8.style.backgroundColor = "white";
+			mainDiv8.style.marginTop = "0px";
 			toWhite11111111.style.color = "#58c1ff";
 			toWhite22222222.style.color = "#a7a7a7";
 			toWhite33333333.style.color = "#a7a7a7";

@@ -847,6 +847,9 @@ html {
 #section2 .container {
   margin-top: -3em; }
 
+#section2 .slider {
+  margin-top: -2.5em; }
+
 .slick-dots {
   text-align: center;
   margin: 0 0 3em 0;
@@ -872,7 +875,6 @@ html {
   hover-background-color: black; }
 
 .to-down {
-  margin-top: 3em;
   text-align: center; }
 
 .white-div-slider {
@@ -898,6 +900,9 @@ html {
   -webkit-border-radius: 110px;
           border-radius: 110px; }
 
+#section2 .slick-dots {
+  display: none !important; }
+
 /* Custom Arrow */
 .prev {
   color: #999;
@@ -920,6 +925,11 @@ html {
 @media screen and (max-width: 800px) {
   .next {
     display: none !important; } }
+
+.white-div-slider:hover {
+  -webkit-box-shadow: 0 0 25px 3px gray;
+          box-shadow: 0 0 25px 3px gray;
+  margin-bottom: 25px; }
 
 #section3 {
   width: auto;
