@@ -751,12 +751,13 @@ a.control_next {
   width: auto;
   height: auto; }
 
-#section1 .parallax-window {
-  padding-top: 15%;
+#section1 .parallax-window-section1 {
+  height: 800px;
+  padding-top: 22.5%;
   padding-bottom: 10%; }
 
-.white-div {
-  padding: 5.625em 6.5em 2% 6.5em;
+.row .white-div {
+  padding: 4% 4% 10% 25%;
   background-color: white; }
 
 .white-div h3 {
@@ -768,8 +769,9 @@ a.control_next {
 
 .white-div p {
   margin-top: 1.25em;
-  font-family: cursive;
-  font-size: 1.5em; }
+  font: italic 1.2em "Fira Sans", serif;
+  font-size: 1.5em;
+  line-height: 1.75em; }
 
 #section1 .white-div a {
   color: black;
@@ -801,15 +803,19 @@ a.control_next {
   width: 98%;
   left: 0; }
 
+.parallax-window-section1 {
+  min-height: auto;
+  background: transparent;
+  background-repeat: no-repeat; }
+
 .video-cont {
-  margin-top: 18%; }
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: 10%; }
 
 .popup-video-wrapper a img {
   margin-left: 5em;
-  width: 32.25em;
-  height: 18.75em;
-  -webkit-box-shadow: 5px 0px 70px 0px #d0d0d0;
-          box-shadow: 5px 0px 70px 0px #d0d0d0; }
+  width: 65%; }
 
 div.mfp-content {
   text-align: center; }
@@ -1179,8 +1185,18 @@ footer .container ul li {
 .copy {
   color: #666666; }
 
+@media screen and (max-width: 1592px) {
+  #section1 .row .white-div {
+    padding-left: 10% !important; } }
+
 @media screen and (max-width: 1200px) {
+  #section1 .popup-video-wrapper a img {
+    width: 90%; }
+  #section1 .row .white-div {
+    padding-right: 3% !important;
+    padding-left: 3% !important; }
   .video-cont {
+    margin-top: 15% !important;
     margin-right: 5em;
     text-align: center; }
   .our-team {

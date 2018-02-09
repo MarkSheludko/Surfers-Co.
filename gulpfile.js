@@ -23,6 +23,14 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'app/js/common.js',
+		'app/js/libs.min.js',
+		'app/js/parallax.js',
+		'app/js/parallax.min.js',
+		'app/js/WOW.js',
+		'app/js/wow.min.js',
+		'app/js/slick/slick.js',
+		'app/js/slick/slick.min.js',
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
@@ -30,7 +38,17 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('css-libs', ['sass'], function() {
-	return gulp.src('app/css/libs.css')
+	//return gulp.src('app/css/libs.css')
+	return gulp.src([
+		'app/css/libs.css',
+		'app/css/libs.min.css',
+		'app/css/common.css',
+		'app/css/animate.css',
+		'app/css/bootstrap.css',
+		'app/css/bootstrap.min.css',
+		'app/css/bootstrap-theme.css',
+		'app/css/bootstrap-theme.min.css',
+	])
 	.pipe(cssnano())
 	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('app/css'));

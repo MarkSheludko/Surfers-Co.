@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -20,7 +21,8 @@
 </head>
 <body>
 	<header>
-		<div class="container">
+	<div class="container-fluid mydiv">
+		<div class="container wow fadeIn">
 			<nav>
 				<a id="black-image" href="#"><img src="img/header/logo.png"></a>
 				<ul>
@@ -39,89 +41,105 @@
 			</nav>
 			<h1>Ride every wave as if it`s your last</h1>
 			<h5>We lvoe the motion of the ocean</h5>
-			
-			<div id="wrapper">
-   
-   	  <h1>Simple Image Slider</h1>
-        
-   	  <div id="slider-wrap">
-      	  <ul id="slider">
-          	 <li data-color="#ffffff">
-                <div>
-                  	<div class="container">
-						<div class="row">
-							<div class="col-6">
-								<div class="background-corner">
-									<img class="corner" src="img/header/corner.png">
-								</div>
-								<img class="boards" src="img/header/boards.png">
-								<h3 style="color: black">Slide #1</h3>
-							</div>
-							<div class="col-6">
-								<h3 style="color: black">Slide #1</h3>
-								<span>Sub-title #1</span>
-							</div>
-						</div>
-                  	</div>
-                </div>                
-                <i class="fa fa-image"></i>
-             </li>
-             
-             <li data-color="#3498db">
-                <div>
-                    <h3>Slide #2</h3>
-                    <span>Sub-title #2</span>
-                </div>
-                <i class="fa fa-gears"></i>
-             </li>
-             
-             <li data-color="#9b59b6">
-                <div>
-                    <h3>Slide #3</h3>
-                    <span>Sub-title #3</span>
-                </div>
-                <i class="fa fa-sliders"></i>
-             </li>
-             
-             <li data-color="#34495e">
-                <div>
-                    <h3>Slide #4</h3>
-                    <span>Sub-title #4</span>
-                </div>
-                <i class="fa fa-code"></i>
-             </li>
-             
-             <li data-color="#e74c3c">
-                <div>
-                    <h3>Slide #5</h3>
-                    <span>Sub-title #5</span>
-                </div>
-                <i class="fa fa-microphone-slash"></i>
-             </li>
-             
-             
-          </ul>
-          
-           <!--controls-->
-          <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-          <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-          <div id="counter"></div>
-          
-          <div id="pagination-wrap">
-            <ul>
-            </ul>
-          </div>   
-      </div>
-   </div>
-		<img class="to-normalize img-responsive" src="img/header/about-us.png">
+       
+       <h1>Incredibly Basic Slider</h1>
+		
+
+		<div class="slider_option">
+		  <input type="checkbox" id="checkbox">
+		  <label for="checkbox">Autoplay Slider</label>
+		</div> 
+   	
+		</div>
+		<div id="slider">
+		  <a href="#" class="control_next"></a>
+		  <a href="#" class="control_prev"></a>
+		  <ul>
+			<li style="background: white;">
+			  <img class="corner wow fadeIn" src="img/header/corner.png">
+			  <img id="boards-to-change" class="boards" src="img/header/boards.png">
+			  <a id="board-1" href="#"><img class="item-board1 wow fadeIn" src="img/header/boards1.png"></a>
+			  <a id="board-2" href="#"><img class="item-board2 wow fadeIn" src="img/header/boards2.png"></a>
+			  <a id="board-3" href="#"><img class="item-board3 wow fadeIn" src="img/header/boards3.png"></a>
+			  <a id="board-4" href="#"><img class="item-board4 wow fadeIn" src="img/header/boards4.png"></a>
+			  <h5>JR Surfboards The Donny Stoker</h5>
+			  <h5 class="second-h5">Yellow/Green Rail Fade</h5>
+			  <hr>
+			  <a id="desc" href="#">Description</a>
+			  <a id="desc2" class="desc2 wow fadeIn">Features</a>
+			  <a id="desc3" class="desc3 wow fadeIn" href="#">Dimensions</a>
+			  <p id="for-text">Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+			  <h5 class="price wow fadeIn"><b>$499.99</b></h5>
+			  <a href="#" class="buy wow fadeIn">Buy Now</a>
+			  <h5 class="all wow fadeIn">View all boards</h5>
+			</li>
+			<li style="background: white;">
+			  <img class="corner" src="img/header/corner.png">
+			  <img id="boards-to-change3" class="boards wow fadeIn" src="img/header/boards.png">
+			  <a id="board-111" href="#"><img class="item-board1 wow fadeIn" src="img/header/boards1.png"></a>
+			  <a id="board-222" href="#"><img class="item-board2 wow fadeIn" src="img/header/boards2.png"></a>
+			  <a id="board-333" href="#"><img class="item-board3 wow fadeIn" src="img/header/boards3.png"></a>
+			  <a id="board-444" href="#"><img class="item-board4 wow fadeIn" src="img/header/boards4.png"></a>
+			  <h5>JR Surfboards The Donny Stoker</h5>
+			  <h5 class="second-h5">Yellow/Green Rail Fade</h5>
+			  <hr>
+			  <a id="desc2" href="#">Description</a>
+			  <a id="desc22" class="desc2">Features</a>
+			  <a id="desc32" class="desc3" href="#">Dimensions</a>
+			  <p id="for-text2">Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+			  <h5 class="price"><b>$499.99</b></h5>
+			  <a href="#" class="buy">Buy Now</a>
+			  <h5 class="all">View all boards</h5>
+			</li>
+			<li style="background: white;">
+			  <img class="corner" src="img/header/corner.png">
+			  <img id="boards-to-change2" class="boards" src="img/header/boards.png">
+			  <a id="board-11" href="#"><img class="item-board1" src="img/header/boards1.png"></a>
+			  <a id="board-22" href="#"><img class="item-board2" src="img/header/boards2.png"></a>
+			  <a id="board-33" href="#"><img class="item-board3" src="img/header/boards3.png"></a>
+			  <a id="board-44" href="#"><img class="item-board4" src="img/header/boards4.png"></a>
+			  <h5>JR Surfboards The Donny Stoker</h5>
+			  <h5 class="second-h5">Yellow/Green Rail Fade</h5>
+			  <hr>
+			  <a id="desc3" href="#">Description</a>
+			  <a id="desc23" class="desc2">Features</a>
+			  <a id="desc33" class="desc3" href="#">Dimensions</a>
+			  <p id="for-text3">Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+			  <h5 class="price"><b>$499.99</b></h5>
+			  <a href="#" class="buy">Buy Now</a>
+			  <h5 class="all">View all boards</h5>
+			</li>
+			<li style="background: white;">
+			  <img class="corner" src="img/header/corner.png">
+			  <img id="boards-to-change4" class="boards" src="img/header/boards.png">
+			  <a id="board-1111" href="#"><img class="item-board1" src="img/header/boards1.png"></a>
+			  <a id="board-2222" href="#"><img class="item-board2" src="img/header/boards2.png"></a>
+			  <a id="board-3333" href="#"><img class="item-board3" src="img/header/boards3.png"></a>
+			  <a id="board-4444" href="#"><img class="item-board4" src="img/header/boards4.png"></a>
+			  <h5>JR Surfboards The Donny Stoker</h5>
+			  <h5 class="second-h5">Yellow/Green Rail Fade</h5>
+			  <hr>
+			  <a id="desc4" href="#">Description</a>
+			  <a id="desc24" class="desc2">Features</a>
+			  <a id="desc34" class="desc3" href="#">Dimensions</a>
+			  <p id="for-text4">Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+			  <h5 class="price"><b>$499.99</b></h5>
+			  <a href="#" class="buy">Buy Now</a>
+			  <h5 class="all">View all boards</h5>
+			</li>
+		  </ul>  
+		</div>
+		
+		<img class="to-normalize img-responsive about-us-img wow fadeIn" src="img/header/about-us.png">
 		</div>
 	</header>
 	
-	<section id="section1">
+	<section id="section1" class="mydiv">
+	 <div class="parallax-window" data-parallax="scroll" data-image-src="img/section1/background.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<div class="white-div">
+					<div class="white-div wow fadeIn">
 						<h3>We are surfers co.</h3>
 						<h3><img src="img/section1/x.png"></h3>
 						<p>Loreme ipsum dolor sit amet, aeneam consectertur adipiscing elit. 
@@ -133,7 +151,7 @@
 					</div>
 				</div>
 				<div class="col-6 video-cont">
-					<div class="popup-video-wrapper">
+					<div class="popup-video-wrapper wow fadeIn">
 						<a href="#popup-video" class="video-link open-popup-link">
 							<img src="img/section1/video.png" alt="Video Image" />
 						</a>
@@ -143,21 +161,24 @@
 				 	</div>
 				</div>
 			</div>
-			<img class="to-normalize img-responsive our-team" src="img/section1/out-team.png">
 		</div>
+	    </div>
 	</section>
 	
-	<section id="section2">
+	<section id="section2" class="mydiv">
+	
 		<div class="container">
+   
+			<img class="to-normalize img-responsive our-team wow fadeIn" src="img/section1/out-team.png">
     <div class="row">
       <div class="col-md-12 heroSlider-fixed">
         <div class="overlay">
       </div>
          <!-- Slider -->
         <div class="slider responsive">
-        	<div class="to-down">
+        	<div class="to-down wow fadeIn">
 				<div id="main-div" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-1.png">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-1.png">
 					<h2 id="to-white-1">Taj Burrow</h2>
 					<p id="to-white-2">@tajamos</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -166,8 +187,8 @@
 			</div>
 			
 			<div>
-				<div id="main-div2" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-2.png">
+				<div id="main-div2" class="white-div-slider wow fadeIn">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-2.png">
 					<h2 id="to-white-11">Malia Manuel</h2>
 					<p id="to-white-22">@maliamanuel</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -176,8 +197,8 @@
 			</div>
 			
 			<div class="to-down">
-				<div id="main-div3" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-3.png">
+				<div id="main-div3" class="white-div-slider wow fadeIn">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-3.png">
 					<h2 id="to-white-111">Ian Walsh</h2>
 					<p id="to-white-222">@ian.walsh</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -186,8 +207,8 @@
 			</div>
 			
 			<div>
-				<div id="main-div4" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-4.png">
+				<div id="main-div4" class="white-div-slider wow fadeIn">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-4.png">
 					<h2 id="to-white-1111">Macy Callaghan</h2>
 					<p id="to-white-2222">@macyjanecallaghan</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -196,8 +217,8 @@
 			</div>
 			
 			<div class="to-down">
-				<div id="main-div5" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-1.png">
+				<div id="main-div5" class="white-div-slider wow fadeIn">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-1.png">
 					<h2 id="to-white-11111">Taj Burrow</h2>
 					<p id="to-white-22222">@tajamos</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -206,8 +227,8 @@
 			</div>
 			
 			<div>
-				<div id="main-div6" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-2.png">
+				<div id="main-div6" class="white-div-slider wow fadeIn">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-2.png">
 					<h2 id="to-white-111111">Malia Manuel</h2>
 					<p id="to-white-222222">@maliamanuel</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -216,8 +237,8 @@
 			</div>
 			
 			<div class="to-down">
-				<div id="main-div7" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-3.png">
+				<div id="main-div7" class="white-div-slider wow fadeIn">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-3.png">
 					<h2 id="to-white-1111111">Ian Walsh</h2>
 					<p id="to-white-2222222">@ian.walsh</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -226,8 +247,8 @@
 			</div>
 			
 			<div>
-				<div id="main-div8" class="white-div-slider">
-					<img class="main-photo" src="img/section2/photo-4.png">
+				<div id="main-div8" class="white-div-slider wow fadeIn">
+					<img class="main-photo wow fadeIn" src="img/section2/photo-4.png">
 					<h2 id="to-white-11111111">Macy Callaghan</h2>
 					<p id="to-white-22222222">@macyjanecallaghan</p>
 					<img class="separator" src="img/section2/separator.png">
@@ -236,10 +257,10 @@
 			</div>
        
         </div>
-			<div class="prev">
+			<div class="prev wow fadeIn">
 				<img src="img/section2/left-icon.png">
 			</div>
-			<div class="next">
+			<div class="next wow fadeIn">
 				<img src="img/section2/right-icon.png">
 			</div>
 				
@@ -248,22 +269,22 @@
   </div>
 	</section>
 	
-	<section id="section3">
-			<h1>Lates updates</h1>
+	<section id="section3" class="mydiv">
+			<h1 class="wow fadeIn">Lates updates</h1>
 			<p><img src="img/section3/x.png"></p>
 		<div class="container">
 			<div class="row">
 				<ul class="cards">
 				  <li id="item" class="cards__item">
-					<div class="card">
+					<div class="card wow fadeIn">
 					  <div class="card__image card__image--record"></div>
 					  <div class="card__content">
 						<p id="p-for-blue" class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
 					  </div>
 					</div>
 				  </li>
-				  <li id="item2" class="cards__item">
-					<div class="card">
+				  <li id="item2" class="cards__item item5">
+					<div class="card wow fadeIn">
 					  <div class="card__image card__image--river"></div>
 					  <div class="card__content">
 						<p id="p-for-blue2" class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
@@ -271,7 +292,7 @@
 					</div>
 				  </li>
 				  <li id="item3" class="cards__item">
-					<div class="card">
+					<div class="card wow fadeIn">
 					  <div class="card__image card__image--record"></div>
 					  <div class="card__content">
 						<p id="p-for-blue3" class="card__text">This defines the ability for a flex item to shrink if necessary. It accepts a unitless value that serves as a proportion.Negative numbers are invalid.</p>
@@ -282,7 +303,7 @@
 				
 				<ul id="more" class="toSmall cards">
 				  <li id="item" class="cards__item">
-					<div class="card">
+					<div class="card wow fadeIn">
 					  <div class="card__image card__image--record"></div>
 					  <div class="card__content">
 						<p id="p-for-blue" class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
@@ -290,7 +311,7 @@
 					</div>
 				  </li>
 				  <li id="item2" class="cards__item">
-					<div class="card">
+					<div class="card wow fadeIn">
 					  <div class="card__image card__image--river"></div>
 					  <div class="card__content">
 						<p id="p-for-blue2" class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up. </p>
@@ -298,7 +319,7 @@
 					</div>
 				  </li>
 				  <li id="item3" class="cards__item">
-					<div class="card">
+					<div class="card wow fadeIn">
 					  <div class="card__image card__image--record"></div>
 					  <div class="card__content">
 						<p id="p-for-blue3" class="card__text">This defines the ability for a flex item to shrink if necessary.It accepts a unitless value that serves as a proportion. Negative numbers are invalid.</p>
@@ -314,46 +335,55 @@
 	<section id="section4">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<img class="to-normalize img-responsive our-team" src="img/section4/instragram.png">
-					<div class="row">
-						<div class="col-md-6">
+				<div class="instagram-div">
+					<div class="col-xl-12 col-lg-6 col-md-12 mydiv">
+				
+					<img class="to-normalize our-team wow fadeIn" src="img/section4/instragram.png">
+					
+					<div class="row inst-images">
+						<div class="col-xl-6 col-lg-6 col-md-5-offset col-xs-5 wow fadeIn">
 							<img src="img/section4/img-1.png">
 						</div>
-						<div class="col-md-6">
+						<div class="col-xl-6 col-lg-6 col-md-5-offset col-xs-5 wow fadeIn">
 							<img src="img/section4/img-2.png">
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-6">
+					
+					<div class="row inst-images">
+						<div class="col-xl-6 col-lg-6 col-md-5-offset col-xs-5 wow fadeIn">
 							<img src="img/section4/img-3.png">
 						</div>
-						<div class="col-md-6">
+						<div class="col-xl-6 col-lg-6 col-md-5-offset col-xs-5 wow fadeIn">
 							<img src="img/section4/img-4.png">
 						</div>
 					</div>
+					
 					<div class="white-row row">
-						<div class="col-md-6">
+						<div class="col-xl-4 col-lg-4 col-md-12-offset col-xs-3.5 white-rows wow fadeIn">
 							<a href="#"><img src="img/section4/instagram-icon.png"></a>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-3 wow fadeIn">
 							<p>@surfersco</p>
 						</div>
-						<div class="col-md-6">
-							
-						</div>
 					</div>
+					
 				</div>
-				<div class="col-md-6 facebook">
+				</div>
+				
+				<div class="col-md-6 facebook wow fadeIn">
 					<img src="img/section4/facebook-background.png">
+					<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="400" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
 				</div>
 			</div>
 		</div>
+		<div id="fb-root"></div>
 	</section>
 	
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6"></div>
-				<div class="col-md-3">
+				<div class="col-md-3 wow fadeIn">
 					<ul>
 						<li><a href="#"><img src="img/section4/separator.png"> About</a></li>
 						<li><a href="#"><img src="img/section4/separator.png"> Boards</a></li>
@@ -361,7 +391,7 @@
 						<li><a href="#"><img src="img/section4/separator.png"> Blog</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 second-ul">
+				<div class="col-md-3 second-ul wow fadeIn">
 					<ul class="second-ul">
 						<li><a href="#"><img src="img/section4/separator.png"> Technology</a></li>
 						<li><a href="#"><img src="img/section4/separator.png"> Team</a></li>
@@ -370,12 +400,51 @@
 					</ul>
 				</div>
 			</div>
-			<p class="copy">© 2017 Surfect Co. •Design by @lucaalco</p>
+			<p class="copy wow fadeIn">© 2017 Surfect Co. •Design by @lucaalco</p>
 		</div>
 	</footer>
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/slick/slick.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/WOW.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	$(function() {
+
+  var divs = $('.mydiv');
+  var div = 0;
+  div = -1
+  divs.each(function(i) {
+    if (div < 0 && ($(this).offset().top >=       $(window).scrollTop())) {
+        div = i;
+    }
+  });
+  $(window).on('mousewheel DOMMouseScroll', function(e) {
+    if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+      if (div > 0) {
+        div--;
+      }
+    } else {
+      if (div < divs.length) {
+        div++;
+      }
+    }
+    $('html,body').stop().animate({
+      scrollTop: divs.eq(div).offset().top
+    }, 200);
+    return false;
+  });
+  $(window).resize(function() {
+    $('html,body').scrollTop(divs.eq(div).offset().top);
+  });
+
+});
+</script>
+<script>
+	new WOW().init();
+</script>
 <script>
 	$('.responsive').slick({
   dots: true,
@@ -459,6 +528,50 @@
 		
 		var item3 = document.getElementById("item3");
 		var p3 = document.getElementById("p-for-blue3");
+		
+		var a1 = document.getElementById("board-1");
+		var a2 = document.getElementById("board-2");
+		var a3 = document.getElementById("board-3");
+		var a4 = document.getElementById("board-4");
+		var boardsImg = document.getElementById("boards-to-change");
+		
+		var a11 = document.getElementById("board-11");
+		var a22 = document.getElementById("board-22");
+		var a33 = document.getElementById("board-33");
+		var a44 = document.getElementById("board-44");
+		var boardsImg2 = document.getElementById("boards-to-change2");
+		
+		var a111 = document.getElementById("board-111");
+		var a222 = document.getElementById("board-222");
+		var a333 = document.getElementById("board-333");
+		var a444 = document.getElementById("board-444");
+		var boardsImg3 = document.getElementById("boards-to-change3");
+		
+		var a1111 = document.getElementById("board-1111");
+		var a2222 = document.getElementById("board-2222");
+		var a3333 = document.getElementById("board-3333");
+		var a4444 = document.getElementById("board-4444");
+		var boardsImg4 = document.getElementById("boards-to-change4");
+		
+		var desc = document.getElementById("desc");
+		var features = document.getElementById("desc2");
+		var dimension = document.getElementById("desc3");
+		var forText = document.getElementById("for-text");
+		
+		var desc2 = document.getElementById("desc2");
+		var features2 = document.getElementById("desc22");
+		var dimension2 = document.getElementById("desc32");
+		var forText2 = document.getElementById("for-text2");
+		
+		var desc3 = document.getElementById("desc3");
+		var features3 = document.getElementById("desc23");
+		var dimension3 = document.getElementById("desc33");
+		var forText3 = document.getElementById("for-text3");
+		
+		var desc4 = document.getElementById("desc4");
+		var features4 = document.getElementById("desc4");
+		var dimension4 = document.getElementById("desc34");
+		var forText4 = document.getElementById("for-text4");
 		
 		mainDiv.mouseIsOver = false;
 		mainDiv.onmouseover = function()   {
@@ -617,6 +730,286 @@
 		    this.mouseIsOver = false;
 			p3.style.color = "#a7a7a7";
 		}
+		
+		desc.mouseIsOver = false;
+		desc.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		};
+		desc.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		features.mouseIsOver = false;
+		features.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText.innerHTML = "The Donny Stoker, a rework on a design from stokesys first ever pro model. A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. ";
+		};
+		features.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		dimension2.mouseIsOver = false;
+		dimension2.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText2.innerHTML = "A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. The Donny Stoker, a rework on a design from stokesys first ever pro model.";
+		};
+		dimension2.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText2.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		desc2.mouseIsOver = false;
+		desc2.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText2.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		};
+		desc2.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText2.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		features2.mouseIsOver = false;
+		features2.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText2.innerHTML = "The Donny Stoker, a rework on a design from stokesys first ever pro model. A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. ";
+		};
+		features2.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText2.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		dimension2.mouseIsOver = false;
+		dimension2.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText2.innerHTML = "A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. The Donny Stoker, a rework on a design from stokesys first ever pro model.";
+		};
+		dimension2.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText2.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		desc3.mouseIsOver = false;
+		desc3.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText3.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		};
+		desc3.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText3.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		features3.mouseIsOver = false;
+		features3.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText3.innerHTML = "The Donny Stoker, a rework on a design from stokesys first ever pro model. A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. ";
+		};
+		features3.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText3.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		dimension3.mouseIsOver = false;
+		dimension3.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText3.innerHTML = "A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. The Donny Stoker, a rework on a design from stokesys first ever pro model.";
+		};
+		dimension3.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText3.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		desc4.mouseIsOver = false;
+		desc4.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText4.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		};
+		desc4.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText4.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		features4.mouseIsOver = false;
+		features4.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText4.innerHTML = "The Donny Stoker, a rework on a design from stokesys first ever pro model. A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. ";
+		};
+		features4.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText4.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		dimension4.mouseIsOver = false;
+		dimension4.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			forText4.innerHTML = "A rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. The Donny Stoker, a rework on a design from stokesys first ever pro model. The Donny Stoker, a rework on a design from stokesys first ever pro model.";
+		};
+		dimension4.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			forText4.innerHTML = "Easy to ride, care free surfing craft that`s fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on a design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.";
+		}
+		
+		a1.mouseIsOver = false;
+		a1.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg.src = "img/header/boards.png";
+		};
+		a1.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg.src = "img/header/boards.png";
+		}
+		
+		a2.mouseIsOver = false;
+		a2.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg.src = "img/header/boards-main-2.png";
+		};
+		a2.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg.src = "img/header/boards.png";
+		}
+		
+		a3.mouseIsOver = false;
+		a3.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg.src = "img/header/boards-main-3.png";
+		};
+		a3.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg.src = "img/header/boards.png";
+		}
+		
+		a4.mouseIsOver = false;
+		a4.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg.src = "img/header/boards-main-2.png";
+		};
+		a4.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg.src = "img/header/boards.png";
+		}
+//2
+		a11.mouseIsOver = false;
+		a11.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg2.src = "img/header/boards.png";
+		};
+		a11.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg2.src = "img/header/boards.png";
+		}
+		
+		a22.mouseIsOver = false;
+		a22.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg2.src = "img/header/boards-main-2.png";
+		};
+		a22.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg2.src = "img/header/boards.png";
+		}
+		
+		a33.mouseIsOver = false;
+		a33.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg2.src = "img/header/boards-main-3.png";
+		};
+		a33.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg2.src = "img/header/boards.png";
+		}
+		
+		a44.mouseIsOver = false;
+		a44.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg2.src = "img/header/boards-main-2.png";
+		};
+		a44.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg2.src = "img/header/boards.png";
+		}
+//3
+		a111.mouseIsOver = false;
+		a111.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg3.src = "img/header/boards.png";
+		};
+		a111.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg3.src = "img/header/boards.png";
+		}
+		
+		a222.mouseIsOver = false;
+		a222.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg3.src = "img/header/boards-main-2.png";
+		};
+		a222.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg3.src = "img/header/boards.png";
+		}
+		
+		a333.mouseIsOver = false;
+		a333.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg3.src = "img/header/boards-main-3.png";
+		};
+		a333.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg3.src = "img/header/boards.png";
+		}
+		
+		a444.mouseIsOver = false;
+		a444.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg3.src = "img/header/boards-main-2.png";
+		};
+		a444.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg3.src = "img/header/boards.png";
+		}
+//4
+		a1111.mouseIsOver = false;
+		a1111.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg4.src = "img/header/boards.png";
+		};
+		a1111.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg4.src = "img/header/boards.png";
+		}
+		
+		a2222.mouseIsOver = false;
+		a2222.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg4.src = "img/header/boards-main-2.png";
+		};
+		a2222.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg4.src = "img/header/boards.png";
+		}
+		
+		a3333.mouseIsOver = false;
+		a3333.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg4.src = "img/header/boards-main-3.png";
+		};
+		a3333.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg4.src = "img/header/boards.png";
+		}
+		
+		a4444.mouseIsOver = false;
+		a4444.onmouseover = function()   {
+		    this.mouseIsOver = true;
+			boardsImg4.src = "img/header/boards-main-2.png";
+		};
+		a4444.onmouseout = function()   {
+		    this.mouseIsOver = false;
+			boardsImg4.src = "img/header/boards.png";
+		}
 	}
 </script>
 <script>  
@@ -627,5 +1020,12 @@
         });
     });
 </script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
