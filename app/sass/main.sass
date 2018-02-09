@@ -1034,6 +1034,7 @@ html
 	border: 1px solid #00b0ff
 	padding: .3em 1.5em
 	margin-left: 36.5%
+	margin-bottom: 5em
 	background-size: 200% 100%
 	background-image: linear-gradient(to right, transparent 50%, white 50%)
 	transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease
@@ -1079,10 +1080,11 @@ html
 #section4
 	position: relative
 	background-color: white
+	//padding-top: 15em
 
-.instagram-div
-
-.instagram-div .inst-images
+#section4 .mydiv
+	position: absolute
+	z-index: 3
 
 #section4 .instagram-div .col-md-6
 	padding: 0
@@ -1104,7 +1106,13 @@ html
 	margin-bottom: 10em
 	z-index: 2
 	margin-top: 13em
-	margin-left: 3.25em
+	margin-left: 13.25em
+
+#section4 .facebook img
+	margin-left: 45em
+
+#section4 .facebook .fb-like
+	margin-left: 48em
 
 #section4 .white-row
 	background-color: white
@@ -1122,11 +1130,6 @@ html
 
 //FOOTER
 footer
-	position: absolute
-	z-index: 1
-    left: 0px
-    top: 0px
-    z-index: -1
 	width: 100%
 	height: auto
 	background-color: black
@@ -1142,18 +1145,28 @@ footer .container a
 
 footer .container ul
 	margin-top: 2.25em
-	margin-left: 1.75em
+	margin-left: 5.75em
 
 footer .container ul li
 	list-style-type: none
 
 .copy
 	color: #666666
+	padding-top: 5em
+	margin-left: 2em
 
 @media screen and (max-width: 1592px)
 	#section1 .row .white-div
 		padding-left: 10%!important
-	
+
+@media screen and (max-width: 1300px)
+	#section4 .mydiv
+		position: relative
+	#section4 .mydiv a
+		margin-left: 46%
+	#section4 .facebook
+		display: none!important
+
 @media screen and (max-width: 1200px)
 	#section1 .popup-video-wrapper a img
 		width: 90%
@@ -1176,6 +1189,8 @@ footer .container ul li
 		margin-left: 5.70em
 	.white-row .white-rows
 		margin-left: 5.5em
+	#section4 .mydiv a
+		margin-left: 16.5%
 		
 @media screen and (max-width: 991px)
 	#section3 .button
@@ -1189,3 +1204,5 @@ footer .container ul li
 		margin-left: 4.75em
 	.white-rows p
 		float: left
+	#section4 .mydiv a
+		margin-left: 7%
