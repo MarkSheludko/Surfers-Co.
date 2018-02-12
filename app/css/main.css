@@ -5,7 +5,7 @@ body {
   background-color: white;
   font-weight: normal; }
 
-.to-normalize {
+.section2-to-normalize-size {
   width: 100%; }
 
 .center {
@@ -29,10 +29,10 @@ header nav {
 header nav ul {
   float: right; }
 
-header nav .second-ul {
+header nav .header-second-ul {
   margin-top: 0.75%; }
 
-header nav .second-ul li a {
+header nav .header-second-ul li a {
   text-decoration: none;
   margin-left: 0.75em;
   margin-right: 0.75em;
@@ -52,7 +52,7 @@ header nav ul li a {
   -o-transition: 1s;
   transition: 1s; }
 
-header nav .second-ul li a:hover {
+header nav .header-second-ul li a:hover {
   background-color: #00b0ff;
   color: #ffffff; }
 
@@ -742,6 +742,12 @@ a.control_next {
   width: 160px;
   font-size: 18px; }
 
+.parallax-window-section1-popup {
+  width: 100%;
+  min-height: 100%;
+  background: transparent;
+  background-repeat: no-repeat; }
+
 .about-us-img {
   margin: 6.25em 6.25em 0 10%;
   width: 80%;
@@ -756,24 +762,24 @@ a.control_next {
   padding-top: 22.5%;
   padding-bottom: 10%; }
 
-.row .white-div {
+.row .section1-white-div {
   padding: 4% 4% 10% 25%;
   background-color: white; }
 
-.white-div h3 {
+.section1-white-div h3 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: -0.6em;
   color: black; }
 
-.white-div p {
+.section1-white-div p {
   margin-top: 1.25em;
   font: italic 1.2em "Fira Sans", serif;
   font-size: 1.5em;
   line-height: 1.75em; }
 
-#section1 .white-div a {
+#section1 .section1-white-div a {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -785,7 +791,7 @@ a.control_next {
   padding: 5px 0px;
   position: relative; }
 
-#section1 .white-div a:after {
+#section1 .section1-white-div a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -799,7 +805,7 @@ a.control_next {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0; }
 
-#section1 .white-div a:hover:after {
+#section1 .section1-white-div a:hover:after {
   width: 98%;
   left: 0; }
 
@@ -904,6 +910,18 @@ html {
 #section2 .slick-dots {
   display: none !important; }
 
+.section2-carousel-item {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+
+.section2-carousel-item:hover {
+  background-color: #00b0ff; }
+  .section2-carousel-item:hover h2 {
+    color: white; }
+  .section2-carousel-item:hover p {
+    color: white; }
+
 /* Custom Arrow */
 .prev {
   color: #999;
@@ -926,11 +944,6 @@ html {
 @media screen and (max-width: 800px) {
   .next {
     display: none !important; } }
-
-.white-div-slider:hover {
-  -webkit-box-shadow: 0 0 25px 3px gray;
-          box-shadow: 0 0 25px 3px gray;
-  margin-bottom: 25px; }
 
 #section3 {
   width: auto;
@@ -955,7 +968,7 @@ html {
   display: block;
   width: 100%; }
 
-.cards {
+.section3-cards {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1139,7 +1152,7 @@ html {
   position: relative;
   background-color: white; }
 
-#section4 .mydiv {
+#section4 .animation-div {
   position: absolute;
   z-index: 3; }
 
@@ -1212,13 +1225,20 @@ footer .container ul li {
   margin-left: 2em; }
 
 @media screen and (max-width: 1592px) {
-  #section1 .row .white-div {
-    padding-left: 10% !important; } }
+  #section1 .row .section1-white-div {
+    padding-left: 10% !important; }
+  #section1 .video-cont {
+    margin-top: 20% !important; } }
 
 @media screen and (max-width: 1300px) {
-  #section4 .mydiv {
+  #section1 .row .section1-white-div {
+    padding-right: 3% !important;
+    padding-left: 3% !important; }
+  #section1 .video-cont {
+    margin-top: 25% !important; }
+  #section4 .animation-div {
     position: relative; }
-  #section4 .mydiv a {
+  #section4 .animation-div a {
     margin-left: 46%; }
   #section4 .facebook {
     display: none !important; } }
@@ -1226,7 +1246,7 @@ footer .container ul li {
 @media screen and (max-width: 1200px) {
   #section1 .popup-video-wrapper a img {
     width: 90%; }
-  #section1 .row .white-div {
+  #section1 .row .section1-white-div {
     padding-right: 3% !important;
     padding-left: 3% !important; }
   .video-cont {
@@ -1245,8 +1265,16 @@ footer .container ul li {
     margin-left: 5.70em; }
   .white-row .white-rows {
     margin-left: 5.5em; }
-  #section4 .mydiv a {
+  #section4 .animation-div a {
     margin-left: 16.5%; } }
+
+@media screen and (max-width: 1084px) {
+  #section1 .video-cont {
+    margin-top: 30% !important; } }
+
+@media screen and (max-width: 1012px) {
+  #section1 .video-cont {
+    margin-top: 40% !important; } }
 
 @media screen and (max-width: 991px) {
   #section3 .button {
@@ -1260,5 +1288,5 @@ footer .container ul li {
     margin-left: 4.75em; }
   .white-rows p {
     float: left; }
-  #section4 .mydiv a {
+  #section4 .animation-div a {
     margin-left: 7%; } }

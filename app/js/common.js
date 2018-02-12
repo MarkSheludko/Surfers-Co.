@@ -1,3 +1,24 @@
+//Gamburger menu
+$(function() {
+	menu = $('nav ul');
+
+  $('#openup').on('click', function(e) {
+    e.preventDefault(); menu.slideToggle();
+  });
+  
+  $(window).resize(function(){
+    var w = $(this).width(); if(w > 480 && menu.is(':hidden')) {
+      menu.removeAttr('style');
+    }
+  });
+  
+  $('nav li').on('click', function(e) {                
+    var w = $(window).width(); if(w < 480 ) {
+      menu.slideToggle(); 
+    }
+  });
+  $('.open-menu').height($(window).height());
+});
 
 jQuery(document).ready(function ($) {
 
@@ -168,4 +189,33 @@ $('.video-link').magnificPopup({
     }
 });
 
-// Section 2 slider
+//// Section 2 slider
+//$('#section2-slider-item').on('mouseover', function(){
+//	this.addClass('section2-slider-hover')
+//})
+//	$('#section2-slider-item').on('mouseover', function(){
+//		$(currentTarget.this.p).addClass('section2-slider-hover');
+//	});
+//	$('#section2-slider-item').on('mouseout', function(){
+//		$('#section2-slider-item').removeClass('section2-slider-hover');
+//	});
+
+//var test = document.getElementById("section2-slider-item");
+//var p = document.getElementsByName("section3-p");
+//  
+//  
+//  // this handler will be executed only once when the cursor moves over the unordered list
+//  test.addEventListener("mouseenter", function( event ) {   
+//    // highlight the mouseenter target
+//    event.target.style.backgroundColor = "#00b0ff";
+//	//event.target.style.transition = "1s";
+//	//event.target.style.marginTop = "50px";
+//	//event.target.style.color = "white";
+//	event.p.style.color = "white";
+//
+//    // reset the color after a short delay
+//    setTimeout(function() {
+//      event.target.style.backgroundColor = "";
+//    }, 1000);
+//  }, false);
+  
