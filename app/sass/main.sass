@@ -853,7 +853,7 @@ html
 	padding: 0
   	
 .slick-dots li
-    display: inline-block
+    //display: inline-block
     margin-left: 4px
     margin-right: 4px
     &.slick-active
@@ -880,8 +880,15 @@ html
 	background-color: white
 	padding-bottom: 2em
 	padding-top: 2em
+	margin-bottom: 10em
 	border-radius: 8px
 	text-align: center
+	border-radius: 5px
+	margin: 1em
+	box-shadow: 2px 5px 30px 1px #ccc
+
+.slick-track
+	padding-bottom: 4em
 
 .white-div-slider img
 	display: inline-block!important
@@ -905,7 +912,9 @@ html
 	transition: 1s
 
 .section2-carousel-item:hover
+	margin-top: 50px
 	background-color: #00b0ff
+	box-shadow: 10px 10px 10px #ccc
 	h2
 		color: white
 	p
@@ -965,6 +974,9 @@ html
 	list-style: none
 	margin: 0
 	padding: 0
+
+.card
+	width: 80%
 
 .cards__item
 	display: flex
@@ -1188,15 +1200,24 @@ footer .container ul li
 		display: none!important
 
 @media screen and (max-width: 1200px)
+	#section1 .parallax-window-section1
+		margin-bottom: -25em
 	#section1 .popup-video-wrapper a img
 		width: 90%
 	#section1 .row .section1-white-div
 		padding-right: 3%!important
 		padding-left: 3%!important
+		padding-bottom: 0!important
 	.video-cont
 		margin-top: 15%!important
 		margin-right: 5em
+		margin-bottom: 5em
 		text-align: center
+	.popup-video-wrapper a img
+		width: 50%!important
+	.parallax-window-section1-popup
+		min-height: 100%!important
+		margin-top: -20em
 	.our-team
 		width: 60%
 		margin-left: 13em!important
