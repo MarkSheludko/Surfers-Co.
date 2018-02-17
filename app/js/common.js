@@ -20,6 +20,126 @@ $(function() {
   $('.open-menu').height($(window).height());
 });
 
+$(document).ready(function(){
+  $('.slider-disp').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    centerMode: true,
+    adaptiveHeight: true
+  });
+  
+  $(".slider-nav").slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    asNavFor: '.slider-disp',
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: '40px',
+    focusOnSelect: true,
+    responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 3,
+        centerPadding: '20px'
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        arrows: false,
+        slidesToShow: 2
+      }
+    }
+  ]
+  });
+});
+
+//UL SLIDER
+// tabbed content1
+    // http://www.entheosweb.com/tutorials/css/tabs.asp
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+  /* if in tab mode */
+    $("ul.tabs li").click(function() {
+		
+      $(".tab_content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs li").removeClass("active");
+      $(this).addClass("active");
+
+	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading").click(function() {
+      
+      $(".tab_content").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs li").removeClass("active");
+	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+	
+	
+	/* Extra class "tab_last" 
+	   to add border to right side
+	   of last tab */
+	$('ul.tabs li').last().addClass("tab_last");
+
+// tabbed content2
+    // http://www.entheosweb.com/tutorials/css/tabs.asp
+    $(".tab_content2").hide();
+    $(".tab_content2:first").show();
+
+  /* if in tab mode */
+    $("ul.tabs2 li").click(function() {
+		
+      $(".tab_content2").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs li").removeClass("active");
+      $(this).addClass("active");
+
+	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading").click(function() {
+      
+      $(".tab_content").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs li").removeClass("active");
+	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+	
+	
+	/* Extra class "tab_last" 
+	   to add border to right side
+	   of last tab */
+	$('ul.tabs li').last().addClass("tab_last");
+	
+
 jQuery(document).ready(function ($) {
 
   $('#checkbox').change(function(){
@@ -188,34 +308,3 @@ $('.video-link').magnificPopup({
       }
     }
 });
-
-//// Section 2 slider
-//$('#section2-slider-item').on('mouseover', function(){
-//	this.addClass('section2-slider-hover')
-//})
-//	$('#section2-slider-item').on('mouseover', function(){
-//		$(currentTarget.this.p).addClass('section2-slider-hover');
-//	});
-//	$('#section2-slider-item').on('mouseout', function(){
-//		$('#section2-slider-item').removeClass('section2-slider-hover');
-//	});
-
-//var test = document.getElementById("section2-slider-item");
-//var p = document.getElementsByName("section3-p");
-//  
-//  
-//  // this handler will be executed only once when the cursor moves over the unordered list
-//  test.addEventListener("mouseenter", function( event ) {   
-//    // highlight the mouseenter target
-//    event.target.style.backgroundColor = "#00b0ff";
-//	//event.target.style.transition = "1s";
-//	//event.target.style.marginTop = "50px";
-//	//event.target.style.color = "white";
-//	event.p.style.color = "white";
-//
-//    // reset the color after a short delay
-//    setTimeout(function() {
-//      event.target.style.backgroundColor = "";
-//    }, 1000);
-//  }, false);
-  

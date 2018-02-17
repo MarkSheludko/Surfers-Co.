@@ -281,6 +281,7 @@ header .slider .slider-white-item .col-lg-2 a img
 header .slider .slider-white-item .col-lg-6
 	padding-top: 1.25em
 	h1
+		font-family: Tahoma, Verdana, Segoe, sans-serif
 		font-size: 1.5em
 		margin-bottom: -0.75em
 	ul.tabs
@@ -329,14 +330,42 @@ header .slider .slider-white-item .col-lg-6
 	.slider-price-item
 		font-size: 2em
 		color: black!important
-		margin-bottom: -1em
+		margin-bottom: -1.10em
 		margin-top: 9.5em
 	button
-		color: black
+		color: white
 		background-color: #00b0ff
-		padding: 2px
+		font-family: Tahoma, Verdana, Segoe, sans-serif
+		text-transform: uppercase
+		padding: 5px 20px
+		letter-spacing: 0.15em
 		border: none
-		margin-left: 15em
+		margin-left: 2em
+	a
+		margin-top: 7em
+		float: left
+		text-decoration: none
+		letter-spacing: 0.10em
+		color: #00b0ff
+		display: inline-block
+		padding: 5px 0px
+		position: relative
+
+	a:after
+		background: none repeat scroll 0 0 transparent
+		bottom: 0
+		content: ""
+		display: block
+		height: 2px
+		left: 50%
+		position: absolute
+		background: #00b0ff
+		transition: width 0.3s ease 0s, left 0.3s ease 0s
+		width: 0
+
+	a:hover:after
+		width: 98%
+		left: 0
 
 @media screen and (max-width: 480px)
 	.tabs
@@ -723,13 +752,16 @@ html
 	flex-wrap: wrap
 
 .button
-	font: normal normal 300 2.5em 'Open Sans'
+	font-family: Tahoma, Verdana, Segoe, bold
+	font-size: 1.25em
+	text-transform: uppercase
+	letter-spacing: 2px
 	text-decoration: none
 	color: white
 	background-color: #00b0ff
 	border: 1px solid #00b0ff
-	padding: .3em 1.5em
-	margin-left: 36.5%
+	padding: .5em 1.5em
+	margin-left: 40.5%
 	margin-bottom: 5em
 	background-size: 200% 100%
 	background-image: linear-gradient(to right, transparent 50%, white 50%)
