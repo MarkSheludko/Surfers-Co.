@@ -261,10 +261,14 @@ header .slick-next:before
   opacity: .75
   color: black
 
+.slider .slick-li-element
+	margin-left: 4.75%
+
 .slider-white-item
 	background-color: white
 	width: 65em
 	height: 37.5em
+	box-shadow: 2px 5px 25px gray
 
 .slider-white-item .boards
 	width: 125%!important
@@ -291,7 +295,6 @@ header .slider .slider-white-item .col-lg-6
 		float: left
 		list-style: none
 		height: 32px
-		border-bottom: 1px solid #333
 		width: 100%
 	ul.tabs li
 		float: left
@@ -341,11 +344,47 @@ header .slider .slider-white-item .col-lg-6
 		letter-spacing: 0.15em
 		border: none
 		margin-left: 2em
+	button:before
+		content: ""
+		width: 100%
+		height: 0
+		position: absolute
+		background-color: white
+		left: 0
+		bottom: 0
+		transition: .4s
+		z-index: -1
+	button:after
+		content: ""
+		width: 100%
+		height: 0
+		position: absolute
+		background-color: white
+		right: 0
+		top: 0
+		transition: .4s
+		z-index: -1
+	button:hover:before, button:nth-child(8):hover:after
+		height: 50%
+	button .after
+		right: -90px
+		top: -18px
+	button .before
+		left: 0
+	button:hover .before
+		left: -90px
+	button:hover .after
+		right: 0
+	button:hover
+		background-color: white
+		transition: .4s
+		color: #00b0ff
+		border: 1px solid #00b0ff
 	a
 		margin-top: 7em
 		float: left
 		text-decoration: none
-		letter-spacing: 0.10em
+		letter-spacing: 0.07em
 		color: #00b0ff
 		display: inline-block
 		padding: 5px 0px
@@ -672,7 +711,7 @@ html
 	display: flex
 	flex-wrap: wrap
 	list-style: none
-	margin: 0
+	margin-left: 5em
 	padding: 0
 
 .card
@@ -680,7 +719,7 @@ html
 
 .cards__item
 	display: flex
-	padding: 1rem
+	margin-bottom: 2em
 	@media(min-width: 40rem)
 		width: 50%
 	
@@ -746,6 +785,10 @@ html
 
 //HIDE
 /*SECTION3-SEE-MORE*/
+
+#more
+	padding-left: 0
+	margin-left: 5em
 
 #section3 .container
 	display: flex
@@ -889,7 +932,21 @@ footer .container ul li
 	#section1 .video-cont
 		margin-top: 20%!important
 
+@media screen and (max-width: 1375px)
+	header .slider .slider-white-item .col-lg-6 h1
+		font-size: 1.25em
+	header .slider .slider-white-item .tab_content
+		padding-right: 20%
+	header .slider .slider-white-item .tabs
+		font-size: 0.8em
+
 @media screen and (max-width: 1300px)
+	header .slider .slider-white-item .tab_content
+		padding-right: 25%
+	header .slider .slider-white-item .tabs
+		margin-top: 2em!important
+		border-bottom: none!important
+		font-size: 0.7em
 	#section1 .row .section1-white-div
 		padding-right: 3%!important
 		padding-left: 3%!important
@@ -902,7 +959,28 @@ footer .container ul li
 	#section4 .facebook
 		display: none!important
 
+@media screen and (max-width: 1250px)
+	header .slider .slider-white-item .tab_content
+		padding-right: 30%
+	header .slider .slider-white-item .tabs
+		font-size: 0.6em
+
 @media screen and (max-width: 1200px)
+	header .slider .slider-white-item .tab_content
+		padding-right: 0%
+	header .slider .slider-white-item .tabs
+		font-size: 1em
+	.slider .slick-li-element
+		margin-left: 0%
+	header .slider .boards
+		width: 150%!important
+		height: 450px
+	header .slider .tabs li
+		color: black!important
+	header .slider p
+		color: black
+	header .slider img
+		width: 50%
 	#section1 .parallax-window-section1
 		margin-bottom: -25em
 	#section1 .popup-video-wrapper a img
@@ -933,6 +1011,10 @@ footer .container ul li
 		margin-left: 5.70em
 	.white-row .white-rows
 		margin-left: 5.5em
+	#section3 .section3-cards
+		margin-top: 2em
+	#section3 .cards__item
+		margin-left: 6em
 	#section4 .animation-div a
 		margin-left: 16.5%
 		
@@ -945,6 +1027,10 @@ footer .container ul li
 		margin-top: 40%!important
 
 @media screen and (max-width: 991px)
+	#section3 .section3-cards
+		margin-top: 2em
+	#section3 .cards__item
+		margin-left: 2.5em
 	#section3 .button
 		font-size: 1.6em
 	.our-team
@@ -958,3 +1044,5 @@ footer .container ul li
 		float: left
 	#section4 .animation-div a
 		margin-left: 7%
+	footer .container ul li
+		display: inline-block
