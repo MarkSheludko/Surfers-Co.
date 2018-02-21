@@ -100,9 +100,6 @@ $(document).ready(function(){
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
 
-// tabbed content2
-	
-
 jQuery(document).ready(function ($) {
 
   $('#checkbox').change(function(){
